@@ -2,7 +2,15 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+header .container,
+section h2 {
+	font-family: 'Bungee', cursive;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
 }
 
 header{
@@ -43,3 +51,22 @@ header nav li a{
 	display: inline;
 }
 
+section .container {
+	align-items: flex-start;
+}
+
+section {
+	padding: 24px 0;
+}
+
+section h2 {
+	margin-bottom: 16px;
+}
+
+section p {
+	margin-bottom: 8px;
+}
+
+.store-front {
+	margin-right: 32px;
+}

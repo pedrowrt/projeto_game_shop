@@ -5,31 +5,29 @@
 }
 
 header .container,
-section h2 ,
-form button{
-  	font-family: "Big Shoulders Stencil Display", sans-serif;
+section h2,
+form button {
+	font-family: "Big Shoulders Stencil Display", sans-serif;
 	font-weight: 701;
 	font-size: 22pt;
-
 }
 
 body, input, textarea {
- 	 font-family: "Urbanist", sans-serif;
-
+	font-family: "Urbanist", sans-serif;
 }
 
-header{
+header {
 	padding: 16px 0;
 	background-color: rgb(37, 50, 98);
 	color: whitesmoke;
 }
-
 
 header .container,
 section .container {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 header nav li {
@@ -39,7 +37,7 @@ header nav li {
 	font-size: 16pt;
 }
 
-header nav li a{
+header nav li a {
 	color: white;
 	text-decoration: none;
 }
@@ -53,6 +51,7 @@ header nav li a{
 .brands-list img {
 	height: fit-content;
 }
+
 .brands-list li {
 	display: inline;
 	margin-right: 8px;
@@ -64,8 +63,7 @@ section .container {
 
 section {
 	padding: 24px 0;
-	color:  rgb(37, 50, 98);
-
+	color: rgb(37, 50, 98);
 }
 
 section h2 {
@@ -74,7 +72,6 @@ section h2 {
 
 section p {
 	margin-bottom: 8px;
-	
 }
 
 .store-front {
@@ -84,7 +81,6 @@ section p {
 
 .social-links img {
 	height: 24px;
-	
 }
 
 .social-links li {
@@ -99,6 +95,7 @@ section p {
 .contact-methods {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 form input,
@@ -127,16 +124,83 @@ form button {
 }
 
 form button:hover {
-	background-color:  rgb(93, 111, 178);
+	background-color: rgb(93, 111, 178);
 	color: white;
 }
 
 input:focus, textarea:focus {
-	outline-color:  rgb(37, 50, 98);
+	outline-color: rgb(37, 50, 98);
 }
 
 footer {
-	background-color:  rgb(37, 50, 98);
+	background-color: rgb(37, 50, 98);
 	color: whitesmoke;
 	padding: 16px 0;
+}
+
+/* Media Query para dispositivos menores */
+@media (max-width: 768px) {
+	header .container,
+	section .container {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	header nav li {
+		display: block;
+		margin: 8px 0;
+		font-size: 18px;
+	}
+
+	.store-front {
+		margin-right: 0;
+		margin-bottom: 16px;
+		height: auto;
+		width: 100%;
+	}
+
+	.contact-methods {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	form input,
+	form textarea,
+	form button {
+		width: 100%;
+		max-width: none;
+	}
+
+	.social-links img {
+		height: 32px;
+	}
+}
+
+/* Media Query para telas maiores (laptops e desktops) */
+@media (min-width: 1024px) {
+	.container {
+		max-width: 1280px;
+		margin: 0 auto;
+	}
+
+	section .container {
+		flex-direction: row;
+		align-items: flex-start;
+	}
+
+	header .container,
+	.contact-methods {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	form input,
+	form textarea,
+	form button {
+		width: 320px;
+	}
+}
+
+.endereco {
+	margin-top: 90px;
 }

@@ -6,7 +6,6 @@
 
 header .container,
 section h2 ,
-section h3,
 form button{
   	font-family: "Big Shoulders Stencil Display", sans-serif;
 	font-weight: 701;
@@ -52,7 +51,7 @@ header nav li a{
 }
 
 .brands-list img {
-	height: 24px;
+	height: fit-content;
 }
 .brands-list li {
 	display: inline;
@@ -80,6 +79,7 @@ section p {
 
 .store-front {
 	margin-right: 32px;
+	height: 260px;
 }
 
 .social-links img {
